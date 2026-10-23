@@ -1,0 +1,9 @@
+{
+  "label": "传感器应用",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "测距传感器、IMU 数据与激光雷达处理。",
+    "slug": "/applications/sensor-application"
+  }
+}

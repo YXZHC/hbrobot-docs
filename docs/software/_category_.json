@@ -1,0 +1,9 @@
+{
+  "label": "开发环境配置",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Ubuntu、ROS 2、VS Code、Python 依赖、NVIDIA 驱动与 Docker。",
+    "slug": "/software"
+  }
+}

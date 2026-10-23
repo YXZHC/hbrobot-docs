@@ -1,0 +1,9 @@
+{
+  "label": "常见问题（FAQ）",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "环境、硬件、通信、运动与视觉问题速查，覆盖机器人与开发环境。",
+    "slug": "/faq"
+  }
+}

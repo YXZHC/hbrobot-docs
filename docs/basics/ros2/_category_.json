@@ -1,0 +1,9 @@
+{
+  "label": "ROS 2",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "话题、服务、动作、Launch、参数与工具链。",
+    "slug": "/basics/ros2"
+  }
+}

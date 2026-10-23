@@ -1,0 +1,704 @@
+.overview {
+  max-width: 980px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 2.2rem 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 26px;
+  background:
+    radial-gradient(420px 220px at 88% 0%, rgba(255, 179, 163, 0.3), transparent 65%),
+    linear-gradient(135deg, #effff9 0%, #e2fbf2 52%, #fff3ec 100%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #2c7462;
+}
+
+.eyebrowIcon {
+  width: 13px;
+  height: 13px;
+}
+
+.hero h1 {
+  margin: 0.55rem 0 0.6rem;
+  font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  color: #1d3934;
+}
+
+.hero h1::after {
+  display: none;
+}
+
+.hero p {
+  max-width: 38rem;
+  margin: 0 0 1.3rem;
+  color: #4c6660;
+  line-height: 1.8;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.primary,
+.ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.18s ease;
+}
+
+.primary {
+  background: #21333a;
+  color: #fff;
+}
+
+.primary:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.ghost {
+  background: rgba(255, 255, 255, 0.72);
+  color: #21333a;
+  border: 1px solid rgba(33, 51, 58, 0.1);
+}
+
+.ghost:hover {
+  background: #fff;
+  color: #21333a;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
+
+.section {
+  margin-bottom: 2.6rem;
+}
+
+.sectionHead {
+  margin-bottom: 1.1rem;
+}
+
+.sectionHead h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sectionHead p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #5f6f73;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 200px;
+  border-radius: 22px;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid rgba(33, 51, 58, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(42, 86, 76, 0.12);
+  color: inherit;
+  text-decoration: none;
+}
+
+.mint {
+  background: linear-gradient(145deg, #ecfff9, #c9f7e8);
+}
+
+.peach {
+  background: linear-gradient(145deg, #fff5f0, #ffe0d4);
+}
+
+.blue {
+  background: linear-gradient(145deg, #f0f8ff, #d9ecff);
+}
+
+.lemon {
+  background: linear-gradient(145deg, #fffcee, #fff1c4);
+}
+
+.productCopy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.2rem 0.4rem 1.1rem 1.2rem;
+  min-width: 0;
+}
+
+.productStatus {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #2c6b5c;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.productCopy strong {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #1d3934;
+  text-wrap: balance;
+}
+
+.productNameZh {
+  margin-top: 0.25rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #2b7462;
+}
+
+.productPlaceholder .productArt svg {
+  opacity: 0.55;
+  filter: grayscale(0.25) drop-shadow(0 12px 16px rgba(44, 86, 76, 0.1));
+}
+
+.productSubtitle {
+  margin-top: 0.3rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #2b7462;
+}
+
+.productCopy p {
+  margin: 0.55rem 0 0.8rem;
+  font-size: 0.76rem;
+  line-height: 1.65;
+  color: #4c6660;
+}
+
+.productCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: auto;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #1f4d42;
+}
+
+.productArt {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 36%;
+  flex: 0 0 36%;
+}
+
+.productArt svg {
+  display: block;
+  width: 135%;
+  max-width: 230px;
+  height: auto;
+  transform: translateX(6%) translateY(4%);
+  filter: drop-shadow(0 12px 16px rgba(44, 86, 76, 0.14));
+}
+
+.modules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.module {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 0.9rem;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--candy-border);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.module:hover {
+  border-color: #7fe3c4;
+  box-shadow: 0 10px 24px rgba(42, 86, 76, 0.08);
+  transform: translateY(-2px);
+  color: inherit;
+  text-decoration: none;
+}
+
+.moduleIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-radius: 12px;
+}
+
+.moduleIcon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.moduleIcon.mint {
+  background: #d9fff3;
+  color: #12856d;
+}
+
+.moduleIcon.peach {
+  background: #ffe7de;
+  color: #bd5a45;
+}
+
+.moduleIcon.blue {
+  background: #e2f1ff;
+  color: #2f6ea8;
+}
+
+.moduleIcon.lemon {
+  background: #fff5c9;
+  color: #987414;
+}
+
+.moduleBody {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.moduleTitle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--candy-ink);
+}
+
+.moduleTitle em {
+  font-style: normal;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #5f6f73;
+  background: #f4f2ec;
+  padding: 0.12rem 0.36rem;
+  border-radius: 999px;
+}
+
+.moduleDesc {
+  margin-top: 0.15rem;
+  font-size: 0.7rem;
+  line-height: 1.55;
+  color: #5f6f73;
+}
+
+.moduleArrow {
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  color: #b3bfc1;
+  opacity: 0;
+  transition: all 0.18s ease;
+}
+
+.module:hover .moduleArrow {
+  opacity: 1;
+  color: #15947a;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 16px;
+  background: #fbfaf5;
+  border: 1px solid var(--candy-border);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+
+.step:hover {
+  border-color: #ffd97d;
+  background: #fffdf4;
+  color: inherit;
+  text-decoration: none;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 11px;
+  background: #fff;
+  border: 1px solid var(--candy-border);
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #7f5c07;
+}
+
+.stepBody {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.stepBody strong {
+  font-size: 0.82rem;
+  color: var(--candy-ink);
+}
+
+.stepBody span {
+  margin-top: 0.1rem;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: #5f6f73;
+}
+
+.stepArrow {
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  color: #b3bfc1;
+}
+
+.note {
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: #fff9e2;
+  border: 1px solid #f6e7b6;
+}
+
+.note strong {
+  display: block;
+  font-size: 0.8rem;
+  color: #8a6811;
+  margin-bottom: 0.3rem;
+}
+
+.note p {
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.65;
+  color: #7d6b35;
+}
+
+/* ================= 独立工具栏目 ================= */
+
+.toolbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+  padding: 1.25rem 1.3rem;
+  border-radius: 20px;
+  background:
+    radial-gradient(320px 150px at 96% 0%, rgba(156, 203, 255, 0.22), transparent 68%),
+    linear-gradient(135deg, #f2fff9 0%, #eaf9ff 100%);
+  border: 1px solid rgba(156, 203, 255, 0.32);
+}
+
+.toolboxCopy {
+  min-width: 0;
+}
+
+.toolboxBadge {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #2f6ea8;
+}
+
+.toolboxCopy strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #1d3934;
+}
+
+.toolboxCopy p {
+  margin: 0.3rem 0 0.7rem;
+  font-size: 0.74rem;
+  line-height: 1.65;
+  color: #566f68;
+}
+
+.toolboxTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.toolboxTags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(33, 51, 58, 0.06);
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: #3f5a55;
+}
+
+.toolboxTags em {
+  font-style: normal;
+  font-weight: 600;
+  color: #5f6f73;
+}
+
+/* Docusaurus 文档正文的全局 a 颜色会覆盖低优先级组件样式，这里显式还原。 */
+.overview a.primary {
+  color: #fff;
+}
+
+.overview a.primary:hover {
+  color: #fff;
+}
+
+.overview a.ghost {
+  color: #21333a;
+}
+
+.overview a.ghost:hover {
+  color: #21333a;
+}
+
+.overview .product,
+.overview .module,
+.overview .step {
+  color: inherit;
+}
+
+/* ================= 暗色模式 ================= */
+
+[data-theme='dark'] .hero {
+  background:
+    radial-gradient(420px 220px at 88% 0%, rgba(245, 143, 124, 0.14), transparent 65%),
+    linear-gradient(135deg, #17342d 0%, #1b4038 52%, #3b2924 100%);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme='dark'] .hero h1,
+[data-theme='dark'] .productCopy strong,
+[data-theme='dark'] .sectionHead h2,
+[data-theme='dark'] .moduleTitle,
+[data-theme='dark'] .stepBody strong {
+  color: #edf7f4;
+}
+
+[data-theme='dark'] .hero p,
+[data-theme='dark'] .productCopy p,
+[data-theme='dark'] .sectionHead p,
+[data-theme='dark'] .moduleDesc,
+[data-theme='dark'] .stepBody span {
+  color: #9fb2b8;
+}
+
+[data-theme='dark'] .primary,
+[data-theme='dark'] .overview a.primary {
+  background: #7fe3c4;
+  color: #102a25;
+}
+
+[data-theme='dark'] .primary:hover,
+[data-theme='dark'] .overview a.primary:hover {
+  color: #102a25;
+}
+
+[data-theme='dark'] .overview a.ghost {
+  color: #e7f2ef;
+}
+
+[data-theme='dark'] .ghost {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #e7f2ef;
+}
+
+[data-theme='dark'] .product.mint {
+  background: linear-gradient(145deg, #14342d, #1b574a);
+}
+
+[data-theme='dark'] .product.peach {
+  background: linear-gradient(145deg, #38241f, #5b332b);
+}
+
+[data-theme='dark'] .productStatus {
+  background: rgba(255, 255, 255, 0.09);
+  color: #b9d6cd;
+}
+
+[data-theme='dark'] .productSubtitle,
+[data-theme='dark'] .productCta {
+  color: #b9d6cd;
+}
+
+[data-theme='dark'] .productNameZh {
+  color: #8fe0cd;
+}
+
+[data-theme='dark'] .toolbox {
+  background:
+    radial-gradient(320px 150px at 96% 0%, rgba(156, 203, 255, 0.08), transparent 68%),
+    linear-gradient(135deg, #17342d 0%, #1b3040 100%);
+  border-color: rgba(127, 227, 196, 0.12);
+}
+
+[data-theme='dark'] .toolboxBadge {
+  color: #9ccbff;
+}
+
+[data-theme='dark'] .toolboxCopy strong {
+  color: #edf7f4;
+}
+
+[data-theme='dark'] .toolboxCopy p {
+  color: #9fb2b8;
+}
+
+[data-theme='dark'] .toolboxTags span {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #d8ece7;
+}
+
+[data-theme='dark'] .toolboxTags em {
+  color: #9fb2b8;
+}
+
+[data-theme='dark'] .module,
+[data-theme='dark'] .step {
+  background: #1b2630;
+  border-color: #2a3742;
+}
+
+[data-theme='dark'] .moduleTitle em,
+[data-theme='dark'] .stepNumber {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #9fb2b8;
+}
+
+[data-theme='dark'] .note {
+  background: #332d17;
+  border-color: #4a401f;
+}
+
+[data-theme='dark'] .note strong {
+  color: #ffd97d;
+}
+
+[data-theme='dark'] .note p {
+  color: #c9bb8e;
+}
+
+@media (max-width: 700px) {
+  .products,
+  .modules,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 1.6rem 1.4rem;
+  }
+
+  .product {
+    min-height: 180px;
+  }
+
+  .toolbox {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .product {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .productCopy {
+    padding: 1.1rem 1.15rem 0.45rem;
+  }
+
+  .productArt {
+    width: 100%;
+    flex: 0 0 auto;
+    height: 104px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 0.9rem;
+    overflow: hidden;
+  }
+
+  .productArt svg {
+    width: 180px;
+    max-width: 62%;
+    transform: translateY(12%);
+  }
+}

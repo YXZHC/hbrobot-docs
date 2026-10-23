@@ -1,0 +1,9 @@
+{
+  "label": "综合任务实战",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "视觉追踪抓取与多模块联动任务。",
+    "slug": "/applications/integration-tasks"
+  }
+}

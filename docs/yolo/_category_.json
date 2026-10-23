@@ -1,0 +1,9 @@
+{
+  "label": "Ultralytics YOLO",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "从图像采集、数据标注到模型训练、导出与 MNN 部署的完整 YOLO 工作流。",
+    "slug": "/yolo"
+  }
+}

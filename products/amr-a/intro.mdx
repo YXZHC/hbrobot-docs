@@ -1,0 +1,55 @@
+---
+slug: /
+title: WS2024-Lyon Agri-AMR 产品概览
+hide_title: true
+description: WS2024-Lyon Agri-AMR（WS2024 里昂农业自主移动机器人）的定位、能力、文档导航与学习路径。
+sidebar_label: 产品概览
+---
+
+import ProductBanner from '@site/src/components/ProductBanner';
+
+<ProductBanner productId="amr-a" />
+
+## 这台机器人适合做什么
+
+**WS2024-Lyon Agri-AMR**（中文名：**WS2024 里昂农业自主移动机器人**）是面向农业场景的自主移动机器人平台。整机以 ROS 2 为软件底座，围绕底盘运动、激光雷达、IMU、执行机构与视觉应用组织文档，适合课程教学、算法验证、农业场景联调和二次开发。
+
+- **教学实训**：从 ROS 2 通信、Python 编程到移动机器人综合任务，按章节循序渐进。
+- **农业场景验证**：围绕田间/温室巡检、物料转运与传感器采集，验证定位、规划和控制策略。
+- **硬件与标定**：提供 VMX-Pi、TiTan 驱动器、底盘运动学、激光雷达、IMU 与 Wi-Fi 的参数说明。
+- **二次开发**：开放底盘、执行机构与传感器接口，配套可复用的 Python 与 ROS 2 示例。
+
+## 文档导航
+
+| 文档 | 适合什么时候看 | 内容 |
+| --- | --- | --- |
+| [快速开始](/amr-a/quick-start) | 刚拿到机器人 | 开箱核对、上电、联网、第一次运动 |
+| [规格参数](/amr-a/specs) | 选型或集成前 | 尺寸、电气、传感器与接口 |
+| [硬件与结构](/amr-a/hardware) | 了解整机组成 | 系统拓扑、运动底盘、OMS 执行机构、传感器 |
+| [参数配置与标定](/amr-a/device-params) | 调试底盘与外设 | VMX-Pi、运动学、电机、雷达、IMU、Wi-Fi |
+| [控制与应用](/amr-a/applications) | 开始写控制程序 | 底盘、执行机构、传感器、视觉与综合任务 |
+| [导航与调参](/amr-a/navigation) | 开始建图和导航 | Nav2 参数建议与调参流程 |
+| [维护与安全](/amr-a/maintenance) | 日常使用 | 检查、保养、电池与安全规范 |
+| [常见问题](/amr-a/faq) | 遇到问题时 | 启动、网络、运动与传感器排错 |
+
+## 建议的学习顺序
+
+1. **先认识整机**：阅读本页和[规格参数](/amr-a/specs)，确认能力边界与安全注意事项。
+2. **跑通第一次**：按[快速开始](/amr-a/quick-start)完成开箱、上电、联网和遥控。
+3. **搭好开发环境**：参考[开发环境配置](/docs/software/preparation)准备 Ubuntu、ROS 2 与常用工具。
+4. **补齐基础知识**：按需学习 [ROS 2](/docs/basics/ros2/ros2-overview) 与 [Python](/docs/basics/python/python-overview)。
+5. **进入控制与应用**：从[底盘速度控制](/amr-a/applications/chassis-control/basic-velocity-control)开始，逐步进入导航、视觉与综合任务。
+
+:::note 资料状态
+
+产品名称已按正式型号更新；规格表中仍标有「待补充」的数值，将在硬件规格书确认后补充。标有「本章正在整理」的章节会陆续补齐实测内容。
+
+:::
+
+## 继续学习
+
+- [开发环境配置](/docs/software/preparation)
+- [基础教学](/docs/basics/ros2/ros2-overview)
+- [Ultralytics YOLO](/docs/yolo)
+- [调试工具](/tools)
+- [通用常见问题](/docs/faq/faq-overview)

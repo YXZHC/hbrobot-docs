@@ -1,0 +1,9 @@
+announcement:
+  label: 站点公告
+  permalink: /announcement
+docs:
+  label: 文档更新
+  permalink: /docs-update
+release:
+  label: 版本发布
+  permalink: /release

@@ -1,0 +1,9 @@
+{
+  "label": "执行机构控制",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "伺服舵机、举升与旋转机构的参数和控制。",
+    "slug": "/applications/actuator-control"
+  }
+}

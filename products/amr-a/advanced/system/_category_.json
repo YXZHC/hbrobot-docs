@@ -1,0 +1,9 @@
+{
+  "label": "System 配置",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "UDEV 规则与 ROS 2 DDS 配置。",
+    "slug": "/advanced/system"
+  }
+}

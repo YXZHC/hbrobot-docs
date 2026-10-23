@@ -1,0 +1,63 @@
+# titan使能服务话题
+titan_enable_topic: "/vmxpi/titan_quad0/enable"
+# VMXPI数据话题
+vmxpi_data_topic: "/vmxpi/vmxpi_datas"
+
+#底盘配置参数
+chassis_param:
+  ctrl_rate: 50                 # 控制频率Hz
+  fuse_imu_odom: True           # 里程计融合imu
+  invert_imu: True              # 反转IMU角速度
+ 
+  #里程计线速度校正系数
+  correct_velx_coeff: 1.0       # x轴系数
+  correct_vely_coeff: 1.0       # y轴系数
+  correct_velw_coeff: 1.0       # w轴系数
+
+  #软急停IO配置(VMXPI DI口)[di0, di1]
+  enable_emg: True              # 使能硬件EMG
+  emg_io: 0                     # vmx di0
+
+
+##运动学模型参数##
+# name:轮子名称
+# radius:轮子半径(m)
+# alpha:轮子位于局部参考坐标系角度(deg)
+# gear_ratio:齿轮比
+# set_topic:轮子设置设置电机转速topic
+# feedback_topic:轮子电机反馈topic
+wheel_names: ['wheel0', 'wheel1']
+
+kinematics_model:
+  wheel0:
+    radius: 0.0675
+    alpha: 90.0
+    wheel_base: 0.16
+    gear_ratio: 1.0
+    set_topic: '/vmxpi/titan_quad0/set_motor0'
+    feedback_topic: '/vmxpi/titan_quad0/vmxpi/encoder0'
+  wheel1:
+    radius: 0.0675
+    alpha: -90.0
+    wheel_base: 0.16
+    gear_ratio: 1.0
+    set_topic: '/vmxpi/titan_quad0/set_motor1'
+    feedback_topic: '/vmxpi/titan_quad0/vmxpi/encoder1'
+
+##动力学参数##
+# max_vel最大速度约束
+# max_acc最大加速度(注:越大响应越快,超调越来大; 越小滞后越大,速度平滑)
+# lowpass_coeff低通滤波系数(注: 越小滞后越大,加速度拐点越平滑, 到达稳态越平滑; 越大响应快,加速度拐点逼近梯形)
+dynamic_param:
+  #最大线速度[x, y, w]      [m/s, m/s, rad/s]
+  max_velx: 0.65
+  max_vely: 0.0
+  max_velw: 3.5
+  #最大加速度[x, y, w]      [m/s^2, m/s^2,  rad/s^2]
+  max_accx: 2.0
+  max_accy: 2.0
+  max_accw: 15.0
+  #速度低通滤波系数 u(k) = (1 - coeff) * u(k-1) + coeff * u(k)
+  lowpass_coeffx: 0.2
+  lowpass_coeffy: 0.2
+  lowpass_coeffw: 0.3
